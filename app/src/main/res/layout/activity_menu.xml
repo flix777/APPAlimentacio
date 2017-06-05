@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.felix.appalimentacio.Activities.activity_menu"
+    android:orientation="vertical"
+    android:background="@color/colorfons">
+
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usermC"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/user_64"
+            android:layout_gravity="center"
+            android:onClick="onClicPerfil"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfil"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/magazine_64"
+            android:layout_gravity="center"
+            android:onClick="onClicCataleg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Catalogo"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/food_64"
+                android:layout_gravity="center"
+                android:onClick="onClicMRecetas"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mis Recetas"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/add_file_64"
+                android:layout_gravity="center"
+                android:onClick="onClicAfegirRecetas"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Añadir Receta"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/calendar_64"
+                android:layout_gravity="center"
+                android:onClick="onClicCalendari"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calendario"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/list_64"
+                android:layout_gravity="center"
+                android:onClick="onClicLListaCompra"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lista Compra"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

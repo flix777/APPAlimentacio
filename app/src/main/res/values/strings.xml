@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">APPAlimentacio</string>
+    <string-array name="tipoIngredient">
+        <item>Cereales</item>
+        <item>Leguminosas</item>
+        <item>Tuberculos y Hortalizas</item>
+        <item>Frutos frescos</item>
+        <item>Frutos secos</item>
+        <item>Leche y derivados</item>
+        <item>Huevos</item>
+        <item>Azucares y dulces varios</item>
+        <item>Aceite y grasas</item>
+        <item>Pescados</item>
+        <item>Carne</item>
+        <item>Cerdo</item>
+        <item>Cordero</item>
+        <item>Oveja</item>
+        <item>Ternera</item>
+        <item>Vaca</item>
+        <item>Embutidos</item>
+        <item>Aves</item>
+        <item>Caza</item>
+    </string-array>
+
+    <string-array name="genere">
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </string-array>
+
+    <string-array name="activitat">
+        <item>Sedentari</item>
+        <item>Estandart</item>
+        <item>Deportista</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

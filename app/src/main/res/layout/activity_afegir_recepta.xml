@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_afegir_recepta"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.felix.appalimentacio.Activities.activity_afegirRecepta"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorfons">
+
+    <android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir Receta"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visible?"
+        android:layout_marginLeft="100dp"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/switchVis"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+
+            android:text="Titulo:"/>
+
+        <EditText
+
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nRecepta"
+           />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+
+                android:text="Descripcion:"/>
+            <EditText
+                android:layout_width="270dp"
+                android:layout_height="60dp"
+                android:id="@+id/dRecepta"
+              />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:text="Instrucciones:"/>
+            <EditText
+                android:layout_width="270dp"
+                android:layout_height="80dp"
+                android:id="@+id/iRecepta"
+             />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+
+
+                android:text="Personas:"/>
+            <EditText
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/pRecepta"
+             />
+
+        </LinearLayout>
+
+
+<LinearLayout
+    android:layout_marginTop="25dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/Container">
+
+</LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="+"
+            android:layout_gravity="center"
+            android:id="@+id/mesIngredient"
+            android:onClick="afegirContainerIngredient"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/importarImatge"
+            android:onClick="onClickImportar"
+            android:hint="Importar Imatge"
+            android:layout_marginTop="14dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Afegir Recepta"
+                android:onClick="onClickAfegirReceptaF"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="5dp"
+
+                />
+
+
+
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:id="@+id/mostrarimg"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/resultatAfegir"/>
+
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>
