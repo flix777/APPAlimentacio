@@ -32,7 +32,6 @@ public class activity_veureRecepta extends AppCompatActivity {
     String us="";
     String nRecepta="";
     int idrepceta=-1;
-  //  final String[] dadesr=new String[5];
     List<Map<String, String>> dataIngRecepta = new ArrayList<>();
 
     TextView trecepta, drecepta, irecepta;
