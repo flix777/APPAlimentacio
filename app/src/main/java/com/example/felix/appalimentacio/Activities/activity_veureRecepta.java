@@ -36,7 +36,7 @@ public class activity_veureRecepta extends AppCompatActivity {
     ImageView imageRec;
     TableLayout table;
     LinearLayout list;
-
+String a;
 
     TextView cal, pr, gr, hc, h20, cen;
 
