@@ -231,9 +231,7 @@ calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
                 events.setText(events.getText()+"\r\n"+textAutoComplete);
                 dadesEvents();
                 loading.dismiss();
-                //   if(s.equals("correcte")){
-                //     Toast.makeText(getApplicationContext(), s, Toast.LENGTH_LONG).show();
-                // }
+
             }
         }
         InsertEvent ui = new InsertEvent();

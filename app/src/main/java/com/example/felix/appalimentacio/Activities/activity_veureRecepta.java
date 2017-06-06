@@ -347,9 +347,7 @@ if(dadesIng.size()>0) {
                 super.onPostExecute(s);
                 mostrarComposicio();
                 loading.dismiss();
-             //   if(s.equals("correcte")){
-               //     Toast.makeText(getApplicationContext(), s, Toast.LENGTH_LONG).show();
-               // }
+
             }
         }
         dadesComposicioIngredients ui = new dadesComposicioIngredients();

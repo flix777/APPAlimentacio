@@ -65,7 +65,7 @@ TextView user, password, mail, nom, resultat;
         int res = 0;
 
         try {
-         //   url = new URL("http://10.0.2.2/Registre/index.php?username="+us+"&password="+pass+"&correu="+mail+"&nom="+nom);
+
             url = new URL("http://alimentacionapp.com/registre.php?username="+us+"&password="+pass+"&correu="+mail+"&nom="+nom);
 
             HttpURLConnection connexio = (HttpURLConnection)url.openConnection();

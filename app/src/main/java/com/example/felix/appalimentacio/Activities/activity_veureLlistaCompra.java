@@ -1,6 +1,5 @@
 package com.example.felix.appalimentacio.Activities;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -9,7 +8,6 @@ import android.widget.CheckBox;
 import android.widget.ListView;
 
 import com.example.felix.appalimentacio.Adapter.ListCompraAdapter;
-import com.example.felix.appalimentacio.Adapter.RequestHandler;
 import com.example.felix.appalimentacio.Model.ItemListCompraModel;
 import com.example.felix.appalimentacio.R;
 
@@ -18,7 +16,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class activity_veureLlistaCompra extends AppCompatActivity {
 String us;
@@ -137,43 +134,6 @@ String us;
         }
     }
 
-    private void checkedIngredient(final String idIng, final boolean checked) {
-        class CheckedIngredient extends AsyncTask<Void, String, String> {
-            RequestHandler rh = new RequestHandler();
-
-
-            @Override
-            protected String doInBackground(Void... params) {
-
-                String result = null;
-
-                HashMap<String,String> data1 = new HashMap<>();
-                data1.put("id", idIng);
-                data1.put("check",String.valueOf(checked));
-                result = rh.sendPostRequest("http://alimentacionapp.com/checkIngredient.php",data1);
-
-                return result;
-            }
-
-            @Override
-            protected void onPreExecute() {
-                super.onPreExecute();
-
-            }
-
-            @Override
-            protected void onPostExecute(String s) {
-                super.onPostExecute(s);
-                if(s.equals("correcta")){
-
-                }
-
-
-            }
-        }
-        CheckedIngredient ui = new CheckedIngredient();
-        ui.execute();
-    }
 
 
     public String cambiarCheckbox( ) {

@@ -92,7 +92,7 @@ public class activity_cataleg extends AppCompatActivity implements AdapterView.O
         List<Map<String, String>> data3 = new ArrayList<Map<String, String>>();
         try {
 
-            //url = new URL("http://10.0.2.2/veureMReceptes/cataleg.php");
+
             url = new URL("http://alimentacionapp.com/cataleg.php");
             HttpURLConnection connexio1 = (HttpURLConnection) url.openConnection();
 

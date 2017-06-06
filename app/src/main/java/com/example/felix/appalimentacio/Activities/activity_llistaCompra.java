@@ -111,8 +111,7 @@ textNomLlista=(EditText) findViewById(R.id.nomLlista);
             }
             if(receptesLlista.size()>0){
                 buscarIdsReceptes();
-                //   buscarIngredientsRecepta();
-//            mostrarLlistaCompra();
+
             }
 
         }
@@ -315,7 +314,6 @@ wait++;
         InsertLLista ui = new InsertLLista();
         ui.execute();
     }
-
 
 
 
