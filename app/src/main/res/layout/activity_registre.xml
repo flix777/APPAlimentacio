@@ -9,13 +9,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.felix.appalimentacio.Activities.activity_login"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/colorfons">
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Alimentación y Nutricion"
+        android:text="APPAlimentación"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:gravity="center"
         android:layout_marginTop="30dp"
@@ -23,99 +24,108 @@
         />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrar-se"
+        android:text="Crear Cuenta"
         android:layout_marginTop="35dp"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Menu"
         android:textSize="25dp"
-        android:layout_marginLeft="20dp"
+        android:gravity="center"
+
         />
 
     <LinearLayout
-        android:layout_marginLeft="20dp"
+        android:gravity="center"
+      android:layout_marginRight="30dp"
         android:layout_marginTop="30dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="65dp"
             android:layout_height="wrap_content"
-            android:text="Nom"
+            android:text="Nombre"
             />
 
         <EditText
             android:id="@+id/rnom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"/>
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/blanc"/>
 
     </LinearLayout>
 
 
     <LinearLayout
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="65dp"
             android:layout_height="wrap_content"
-            android:text="Correu"
+            android:text="Correo"
             />
 
         <EditText
             android:id="@+id/rcorreu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/blanc"
             android:inputType="textEmailAddress"
             />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="65dp"
             android:layout_height="wrap_content"
-            android:text="Nom d'Usuari"
+            android:text="Usuario"
             />
 
         <EditText
             android:id="@+id/ruser"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"/>
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/blanc"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="65dp"
             android:layout_height="wrap_content"
             android:text="Password"
             />
 
         <EditText
             android:id="@+id/rpass"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"/>
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/blanc"/>
 
     </LinearLayout>
 
@@ -127,12 +137,14 @@
 
 
         <Button
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Registrar-se"
             android:id="@+id/rRegistre"
             android:layout_marginLeft="120dp"
             android:onClick="onClickRegistreConta"
+
 
             />
 

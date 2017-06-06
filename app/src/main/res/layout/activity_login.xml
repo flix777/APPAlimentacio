@@ -16,7 +16,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Alimentación y Nutricion"
+        android:text="APPAlimentación"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:gravity="center"
         android:layout_marginTop="30dp"
@@ -24,42 +24,52 @@
         />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LOGIN"
         android:layout_marginTop="55dp"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Menu"
         android:textSize="25dp"
-        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
         />
 
     <LinearLayout
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_width="wrap_content"
+
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginRight="45dp"
+
+        >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="USER"
+            android:text="USUARIO"
+
             />
 
         <EditText
+            android:layout_marginTop="10dp"
             android:id="@+id/user"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"/>
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/blanc"
+            />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="20dp"
-        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginRight="45dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -68,10 +78,14 @@
             />
 
         <EditText
+            android:layout_marginTop="10dp"
             android:id="@+id/pass"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"/>
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/blanc"
+            android:inputType="textPassword"
+            />
 
     </LinearLayout>
 
@@ -79,7 +93,8 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:layout_marginTop="10dp">
+    android:layout_marginTop="60dp"
+    android:layout_gravity="center">
 
     <Button
         android:layout_width="wrap_content"
@@ -87,7 +102,6 @@
         android:hint="Entrar"
         android:id="@+id/bSub"
         android:onClick="onClickLogin"
-        android:layout_marginLeft="9dp"
 
         />
 

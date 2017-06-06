@@ -23,9 +23,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/eventsCalendar"
-        android:text="Eii"
         android:layout_below="@+id/calendar"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
      />
 
 <LinearLayout

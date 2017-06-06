@@ -81,7 +81,6 @@ public class activity_login extends AppCompatActivity {
         int res = 0;
 
         try {
-           // url = new URL("http://10.0.2.2/ComprovarLogin/index.php?username="+us+"&password="+pass);
             url = new URL("http://alimentacionapp.com/login.php?username="+us+"&password="+pass);
             HttpURLConnection connexio = (HttpURLConnection)url.openConnection();
             connexio.setDoInput(true);
