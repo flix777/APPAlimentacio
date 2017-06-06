@@ -166,8 +166,10 @@ if(dadesIng.size()>0) {
                             trecepta.setText(dadesr[2]);
                             drecepta.setText(dadesr[3]);
                             irecepta.setText(dadesr[4]);
-                            byte[] decodedBytes = Base64.decode(dadesr[5], 0);
-                            imageRec.setImageBitmap(BitmapFactory.decodeByteArray(decodedBytes, 0, decodedBytes.length));
+                            if(dadesr[5]!=null) {
+                                byte[] decodedBytes = Base64.decode(dadesr[5], 0);
+                                imageRec.setImageBitmap(BitmapFactory.decodeByteArray(decodedBytes, 0, decodedBytes.length));
+                            }
                             dadesIngredientsRecepta();
 
                         }

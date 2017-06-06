@@ -208,7 +208,10 @@ public String buscarIdRecepta(String us, String nRecepta ) {
                         //  int r = dadesJSON(resultatC);
                         //if (r > 0) {
                         if(resultatC.equals("correcta")){
-                            uploadImage();
+                          if(bmp!=null) {
+                              uploadImage();
+
+                          }
                             while(idrecepta==-1){
                                 buscarID(us, nom);
                             }
